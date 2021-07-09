@@ -49,7 +49,7 @@ function handleSubmit(event) {
 function loadToDos() {
   const loadedToDos = localStorage.getItem(TODOS_LS); // 키값인 toDos 가져오기
   if (loadedToDos !== null) {
-    const parsedToDos = JSON.parse(loadedToDos); // JSON으로 저장된 데이터를 다시 string으로
+    const parsedToDos = JSON.parse(loadedToDos); // string으로 저장된 데이터를 객체로
     parsedToDos.forEach(function (toDo) {
       // forEach = 각각 함수 실행 / toDo는 실행시킬 각각을 의미
       paintToDo(toDo.text);
