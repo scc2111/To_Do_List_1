@@ -16,7 +16,7 @@ function getTime() {
 
 function init() {
     getTime();
-    setInterval(getTime, 1000);
+    setInterval(getTime, 1000); // getTime 1초마다실행
 }
 
 init();

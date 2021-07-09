@@ -18,7 +18,7 @@ function handleSubmit(event) {
 
 function askForName() {  // 이름 요청
     form.classList.add(SHOWING_CN);
-    form.addEventListener("submit", handleSubmit); // submit 했을시 handlesumbmit 하게됨
+    form.addEventListener("submit", handleSubmit); // submit 했을시 handlesumbmit 수행
 }
 
 
